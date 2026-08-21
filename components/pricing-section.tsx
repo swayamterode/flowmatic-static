@@ -4,7 +4,7 @@ import { DecorIcon } from "@/components/decor-icon";
 import { CheckIcon, ShieldCheckIcon } from "lucide-react";
 import Link from "next/link";
 
-const plans = [
+export const plans = [
   {
     name: "Essentials",
     tagline: "Great for getting started.",

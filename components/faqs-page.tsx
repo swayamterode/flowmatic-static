@@ -38,7 +38,7 @@ export function FaqsSection() {
   );
 }
 
-const faqs = [
+export const faqs = [
   {
     id: "item-1",
     title: 'What counts as a "run"?',

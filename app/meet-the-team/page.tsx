@@ -4,8 +4,11 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { DecorIcon } from "@/components/decor-icon";
 
 export const metadata: Metadata = {
-  title: "Meet the Team — Flowmatic",
+  title: "Meet the Team",
   description: "The people building Flowmatic, the no-code workflow automation platform.",
+  alternates: {
+    canonical: "/meet-the-team",
+  },
 };
 
 const team = [

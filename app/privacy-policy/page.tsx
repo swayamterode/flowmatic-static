@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — Flowmatic",
+  title: "Privacy Policy",
   description: "How Flowmatic collects, uses, and protects your data.",
+  alternates: {
+    canonical: "/privacy-policy",
+  },
 };
 
 const sections = [

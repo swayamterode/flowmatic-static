@@ -1,14 +1,49 @@
 import { CallToAction } from "@/components/cta";
-import { FaqsSection } from "@/components/faqs-page";
+import { FaqsSection, faqs } from "@/components/faqs-page";
 import { Footer } from "@/components/footer";
 import { HeroSection } from "@/components/hero";
 import { Integrations } from "@/components/integrations";
-import { PricingSection } from "@/components/pricing-section";
+import { JsonLd } from "@/components/json-ld";
+import { PricingSection, plans } from "@/components/pricing-section";
+import { siteConfig } from "@/lib/site-config";
 import ResearchBentoGrid from "@/components/ui/research-bento-grid";
+
+const softwareApplicationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  name: siteConfig.name,
+  applicationCategory: "BusinessApplication",
+  operatingSystem: "Web",
+  description: siteConfig.description,
+  url: siteConfig.url,
+  offers: plans.map((plan) => ({
+    "@type": "Offer",
+    name: plan.name,
+    description: plan.tagline,
+    price: plan.price,
+    priceCurrency: "INR",
+    url: `${siteConfig.url}/#pricing`,
+  })),
+};
+
+const faqPageJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.title,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.content,
+    },
+  })),
+};
 
 export default function Home() {
   return (
     <>
+      <JsonLd data={softwareApplicationJsonLd} />
+      <JsonLd data={faqPageJsonLd} />
       <div className="p-2">
         <HeroSection />
       </div>
