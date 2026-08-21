@@ -17,16 +17,16 @@ export function Integrations() {
   return (
     <div className="relative mx-auto grid max-w-4xl grid-cols-1 gap-12 border-x md:grid-cols-2 md:items-center">
       {/* Left Content */}
-      <div className="p-4 md:p-6">
-        <div className="space-y-4">
-          <h2 className="font-medium text-3xl text-foreground tracking-tight sm:text-3xl">Integration we provide</h2>
+      <div className="p-4 sm:p-6 md:p-6">
+        <div className="space-y-4 text-center md:text-left">
+          <h2 className="font-medium text-xl text-foreground tracking-tight sm:text-3xl">Integration we provide</h2>
           <p className="text-muted-foreground text-sm md:text-base">Connect your favorite tools with our growing library of integrations.</p>
           <Button size="sm">Explore integrations</Button>
         </div>
       </div>
 
       {/* Right Content - Visual */}
-      <div className="place-items-end">
+      <div className="flex justify-center md:justify-end">
         <div className="relative size-80">
           {/* Grid Background */}
           <div

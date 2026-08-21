@@ -3,14 +3,14 @@ import { DecorIcon } from "@/components/decor-icon";
 
 export function FaqsSection() {
   return (
-    <section className="mx-auto grid min-h-120 w-full max-w-4xl grid-cols-1 md:grid-cols-2 lg:border-x">
+    <section className="mx-auto grid min-h-120 w-full max-w-4xl grid-cols-1 md:grid-cols-2 lg:border-x pb-20 sm:pb-0">
       <div className="px-4 pt-12 pb-6">
         <div className="space-y-5">
-          <h2 className="text-balance font-bold text-3xl lg:font-black">
-            Questions, <br /> Answered
+          <h2 className="text-balance font-bold text-xl md:text-3xl lg:font-black">
+            Questions, <br className="hidden" /> Answered
           </h2>
-          <p className="text-muted-foreground">Quick answers to common questions about Flowmatic. Open any question to learn more.</p>
-          <p className="text-muted-foreground">
+          <p className="text-muted-foreground text-sm md:text-base">Quick answers to common questions about Flowmatic. Open any question to learn more.</p>
+          <p className="text-muted-foreground text-sm md:text-base">
             {"Can't find what you're looking for? "}
             <a className="text-primary hover:underline" href="#">
               Contact Us

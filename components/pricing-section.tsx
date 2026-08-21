@@ -41,8 +41,10 @@ export function PricingSection() {
         <div className="flex justify-center">
           <div className="rounded-md border px-4 py-1 text-sm">Pricing</div>
         </div>
-        <h2 className="mt-4 text-center font-bold text-2xl tracking-tight md:text-3xl">Plans that grow with your success</h2>
-        <p className="mx-auto mt-2 max-w-md text-center text-muted-foreground text-sm leading-6">Transparent pricing for powerful workflows, with the flexibility to scale as your team grows.</p>
+        <h2 className="mt-4 text-center font-medium text-xl tracking-tight md:text-3xl">Plans that grow with your success</h2>
+        <p className="mx-auto mt-2 max-w-md text-center text-muted-foreground text-sm sm:text-base leading-6">
+          Transparent pricing for powerful workflows, with the flexibility to scale as your team grows.
+        </p>
       </div>
 
       <div className="mx-auto w-full max-w-4xl space-y-2">
@@ -59,12 +61,12 @@ export function PricingSection() {
                   <h3 className="font-semibold leading-none">{plan.name}</h3>
                   {plan.highlighted && <Badge>Most popular</Badge>}
                 </div>
-                <p className="text-muted-foreground text-sm">{plan.tagline}</p>
+                <p className="text-muted-foreground text-xs sm:text-sm">{plan.tagline}</p>
               </div>
               <div className="mt-10 space-y-1">
                 <div className="flex items-end gap-0.5 text-muted-foreground text-xl">
                   <span>₹</span>
-                  <span className="-mb-0.5 font-extrabold text-4xl text-foreground tracking-tighter md:text-4xl">{plan.price}</span>
+                  <span className="-mb-0.5 font-extrabold text-md text-foreground tracking-tighter md:text-4xl">{plan.price}</span>
                   <span>/mo</span>
                 </div>
                 <p className="font-medium text-muted-foreground text-xs">{plan.runs}</p>
@@ -85,7 +87,7 @@ export function PricingSection() {
           ))}
         </div>
 
-        <div className="flex items-center justify-center gap-x-2 text-muted-foreground text-sm">
+        <div className="flex items-center justify-center gap-x-2 text-muted-foreground text-xs md:text-sm">
           <ShieldCheckIcon className="size-4" />
           <span>Access to all features with no hidden fees</span>
         </div>

@@ -547,18 +547,14 @@ export function ResearchBentoGrid({
   return (
     <div
       {...props}
-      className={cn(
-        "flex h-full max-w-4xl mx-auto overflow-y-auto p-2 text-zinc-950 [--bento-tile-cutout:#e4e4e1] [container-type:inline-size] sm:p-0",
-        "dark:text-white dark:[--bento-tile-cutout:#171717]",
-        className,
-      )}
+      className={cn("flex h-full max-w-4xl mx-auto overflow-y-auto p-2 text-zinc-950 [--bento-tile-cutout:#e4e4e1] @container sm:p-0", "dark:text-white dark:[--bento-tile-cutout:#171717]", className)}
     >
-      <div className="m-auto w-full max-w-[1120px]">
+      <div className="m-auto w-full max-w-280">
         <div className="mx-auto mb-8 max-w-lg sm:mb-10">
           <div className="flex justify-center">
             <div className="rounded-md border px-4 py-1 text-sm">{content.sectionEyebrow}</div>
           </div>
-          <h2 className="mt-4 text-center font-bold text-2xl tracking-tight md:text-3xl">{content.sectionTitle}</h2>
+          <h2 className="mt-4 text-center font-medium text-xl tracking-tight md:text-3xl">{content.sectionTitle}</h2>
           <p className="mt-2 text-center text-muted-foreground text-sm md:text-base">{content.sectionDescription}</p>
         </div>
 

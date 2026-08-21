@@ -16,7 +16,7 @@ export function CallToAction() {
 
       <div className="absolute top-0 left-1/2 -z-10 h-full border-l border-dashed" />
 
-      <h2 className="text-center font-semibold text-xl md:text-3xl">Start for Free Today!</h2>
+      <h2 className="text-center font-medium text-xl md:text-3xl">Start for Free Today!</h2>
       <p className="text-balance text-center font-medium text-muted-foreground text-sm md:text-base">Claim your 10 free automated runs and put your workflows on autopilot</p>
 
       <div className="flex items-center justify-center gap-2">

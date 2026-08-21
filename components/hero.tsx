@@ -7,7 +7,7 @@ import { ArrowRightIcon, CirclePlayIcon } from "lucide-react";
 export function HeroSection() {
   return (
     <section className="mx-auto max-w-4xl">
-      <div className="relative flex flex-col items-center justify-center gap-5 px-4 py-12 md:px-4 md:py-24 lg:py-28">
+      <div className="relative flex flex-col items-center justify-center gap-5 px-4 py-5 md:px-4 md:py-24 lg:py-28">
         {/* X Faded Borders & Shades */}
         <div aria-hidden="true" className="absolute inset-0 -z-1 size-full overflow-hidden">
           <div className={cn("absolute -inset-x-20 inset-y-0 z-0 rounded-full", "bg-[radial-gradient(ellipse_at_center,theme(--color-foreground/.1),transparent,transparent)]", "blur-[50px]")} />
@@ -46,23 +46,23 @@ export function HeroSection() {
         </h1>
 
         <div className={cn("flex max-w-md flex-col items-center gap-2", "fade-in slide-in-from-bottom-10 animate-in fill-mode-backwards delay-200 duration-500 ease-out")}>
-          <p className="text-center text-muted-foreground text-sm">Build, run, and monitor automated workflows in minutes.</p>
+          <p className="text-center text-muted-foreground text-xs md:text-sm">Build, run, and monitor automated workflows in minutes.</p>
 
-          <ul className="flex flex-wrap items-center justify-center gap-1.5">
-            {["Connect your tools", "Add logic & AI", "Let it run itself"].map((chunk) => (
+          <ul className="flex flex-wrap items-center justify-center gap-1.5 pt-3 sm:pt-0">
+            {["Upload CSV", "Add logic & AI", "Let it run itself"].map((chunk) => (
               <li key={chunk} className="rounded-full border bg-card px-2.5 py-1 text-muted-foreground text-xs">
                 {chunk}
               </li>
             ))}
           </ul>
 
-          <p className="text-center font-medium text-foreground text-sm">No-code simple. Developer-grade powerful.</p>
+          <p className="text-center font-medium text-foreground text-xs md:text-sm">No-code simple. Developer-grade powerful.</p>
         </div>
 
         <div className="fade-in slide-in-from-bottom-10 flex w-fit animate-in items-center justify-center gap-3 fill-mode-backwards pt-2 delay-300 duration-500 ease-out">
-          <Button variant="outline">
+          {/* <Button variant="outline">
             <CirclePlayIcon data-icon="inline-start" /> See how it works
-          </Button>
+          </Button> */}
           <Button>
             Get started <ArrowRightIcon data-icon="inline-end" />
           </Button>
