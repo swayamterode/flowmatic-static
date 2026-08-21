@@ -51,7 +51,7 @@ export default function Home() {
         <Integrations />
       </div>
       <ResearchBentoGrid id="features" className="scroll-mt-24 mt-20" />
-      <div className="py-10 md:py-0 p-2 md:p-20 md:pb-10">
+      <div className="py-10 p-2 md:p-20 md:pb-10">
         <CallToAction />
       </div>
       <div id="pricing" className="scroll-mt-24 pb-20 pt-10 p-2">

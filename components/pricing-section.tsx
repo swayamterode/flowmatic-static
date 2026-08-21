@@ -80,7 +80,7 @@ export function PricingSection() {
                 ))}
               </ul>
 
-              <Button className="mt-4 w-full" nativeButton={false} render={<a href="https://app-flowmatic.vercel.app/pricing" target="_blank" />} variant={plan.highlighted ? "default" : "outline"}>
+              <Button className="mt-4 w-full" nativeButton={false} render={<a href="https://app.flowmaticai.in/pricing" target="_blank" />} variant={plan.highlighted ? "default" : "outline"}>
                 {plan.cta}
               </Button>
             </div>
