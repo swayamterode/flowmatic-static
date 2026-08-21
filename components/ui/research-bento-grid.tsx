@@ -518,8 +518,8 @@ function PausePanel({ paused: controlledPaused, defaultPaused, autoPlay, spotlig
 }
 
 export function ResearchBentoGrid({
-  monthlyPrice = 1990,
-  previousPrice = 500,
+  monthlyPrice = 500,
+  previousPrice = 1950,
   currency = "INR",
   locale = "en-US",
   paused,
